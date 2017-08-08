@@ -1,0 +1,276 @@
+/*	CONFIG
+	====== */
+
+/*	TYPOGRAPHY
+	========== */
+
+$iconFont: "icons" !important;
+
+$serif: "bookmania";
+$sans-serif: "proxima-nova";
+$fontWeightNormal: 400;
+$fontWeightBold: 600;
+
+
+/*	LAYOUT
+	====== */
+
+/* Site breakpoints */
+
+$tiny: 25em; /* 400px divided by 16px */
+$small: 37.5em; /* 600px divided by 16px */
+$medium: 50em; /* 800px divided by 16px */
+$large: 62.5em; /* 1000px divided by 16px */
+
+
+/* The padding on u-lHeader, u-lMain, u-lFooter, and u-NavSite. */
+
+$layoutContainerPadding--tiny: 4%;
+$layoutContainerPadding--medium: 3%;
+
+
+/* COLOR
+	====== */
+
+/* Basic link colors - these colors also affect the Google Search result link colors */
+
+$linkColor: #608491;
+$linkColorHoverFocus: #000;
+$linkColorVisited: #a88; /* tint($linkColorVisited, 50%) or shade($linkColorVisited, 50%) can be used to lighten or darken hue */
+$linkColorActive: #000;
+$linkBorderColor: #608491;
+
+$fontColor: #444;
+
+$html--backgroundColor: #eee;
+$body--backgroundColor: transparent;
+$u-lHeader--backgroundColor: transparent;
+$u-lFooter--backgroundColor: #fff;
+
+
+
+/* MODULES
+	======== */
+
+
+/* Bios */
+
+$u-BioList__name--font: 1.1em $sans-serif;
+$u-BioList__title--font: .9em $sans-serif ;
+$u-Bio__title--font: bold 100% $sans-serif;
+$u-Bio__contactItemLabel--font: bold .85em $sans-serif ;
+$u-Bio__contactData--font: .9em $sans-serif ;
+$u-Bio__contactItem--marginBottom: .1em;
+
+$u-Bio__title--color: inherit;
+$u-Bio__contactItemLabel--color: inherit;
+$u-Bio__contactData--color: inherit;
+
+
+/* Breadcrumbs  */
+
+$u-BreadCrumbs__item--font: .9em $sans-serif;
+
+$u-BreadCrumbs__item--dividerColor: #ccc;
+
+$u-BreadCrumbs__item--linkColor: $linkColor;
+$u-BreadCrumbs__item--linkColorHoverFocus: $linkColorHoverFocus;
+$u-BreadCrumbs__item--linkColorVisited: $linkColorVisited;
+$u-BreadCrumbs__item--linkColorActive: $linkColorActive;
+
+
+/* Footer */
+
+$u-VCard__site--font: normal 1em/1.2 $sans-serif;
+$u-VCard__site--labelFont: normal 1em/1.2 $sans-serif;
+
+$u-VCard__site--color: inherit;
+$u-VCard__site--labelColor: inherit;
+
+$u-VCard__site--linkColor: $linkColor;
+$u-VCard__site--linkColorHoverFocus: $linkColorHoverFocus;
+$u-VCard__site--linkColorVisited: $linkColorVisited;
+$u-VCard__site--linkColorActive: $linkColorActive;
+
+$u-VCard__site--border: none;
+
+
+/* Images */
+
+$u-Figure__caption--font: normal .9em $sans-serif;
+
+$u-Figure__caption--linkColor: $linkColor;
+$u-Figure__caption--linkColorHoverFocus: $linkColorHoverFocus;
+$u-Figure__caption--linkColorVisited: $linkColorVisited;
+$u-Figure__caption--linkColorActive: $linkColorActive;
+
+$figureMargin: 1.25em;
+
+/*	Google search results  */
+
+$gsSearchTermHighlighted: #000;	/* Currently being overridden by something in Google's default CSS */
+
+$gsSearchResultTitle: normal 1.4em/1.1 $sans-serif;
+
+$gs-visibleUrl-long--font: normal 1em $sans-serif !important;
+$gs-visibleUrl-long--color: $linkColorVisited !important;
+	
+/* The numbers that represent pages of search results */
+$gsPaginationNumberBorderColor: #eee;
+$gsPaginationCurrentLinkBorder: #ccc;
+$gsPaginationCurrentLinkBackground: #eee;
+$gsPaginationHoverLinkBorder: #ccc;
+$gsPaginationHoverLinkBackground: #ddd;
+
+
+/* Nav */
+
+$u-NavSite__level--1--font: bold 1.4em/1.1 $serif;
+$u-NavSite__level--2--font: normal 1em/1.1 $sans-serif;
+$u-NavSite__level--3--font: normal 1em/1.1 $sans-serif;
+/* level 3 covers Level 3 and up. */
+
+$u-NavSite__level--borderColor: 1px solid #eee;
+
+$mobileMenuBackground: $linkColor;
+$mobileMenuLinkColor: #fff;
+
+
+/* LATEST Modules basic */
+
+$sidebarModule__header--font: $fontWeightBold 1.25em/1.1 $sans-serif;
+$sidebarModule--nameFont: bold .9em $sans-serif;
+$sidebarModule--font: normal .9em $sans-serif;
+$sidebarModule--labelFont: $fontWeightBold .9em $sans-serif;
+$sidebarModule--margin: 0 0 1.5em;
+
+$sidebarModule__moreLink--font: .9em $sans-serif;
+
+/* Use these variables to place a bg color on side news announcement items */
+$sidebarModuleAnnouncements__link--background: transparent;
+$sidebarModuleAnnouncements__link--padding: 0;
+$sidebarModule__listItem--border: 1px solid #eee;
+
+$sidebarModule__header--linkColor: $linkColor;
+$sidebarModule__header--linkColorHoverFocus: $linkColorHoverFocus;
+$sidebarModule__header--linkColorActive: $linkColorActive;
+$sidebarModule__header--linkColorVisited: $linkColorVisited;
+
+
+/* News  */
+
+$u-ArticleListItem__title--font: normal 1em/1.2 $serif;
+$u-ArticleListItem__title--linkColor: #666;
+$u-ArticleListItem__title--linkColorHoverFocus: $linkColorHoverFocus;
+$u-ArticleListItem__title--linkColorActive: $linkColorActive;
+$u-ArticleListItem__title--linkColorVisited: $linkColorVisited;
+$u-ArticleListItem__summary--font: normal 1em $sans-serif;
+$u-ArticleListItem__label--type--font: normal .8em $sans-serif;
+$u-ArticleListItem__label--dateline__posted--font: normal .8em $sans-serif;
+$u-ArticleListItem__label--dateline__postedDate--font: normal .8em $sans-serif;
+
+$u-ArticleListItem__link--linkColor: $linkColor;
+$u-ArticleListItem__link--linkColorHoverFocus: $linkColorHoverFocus;
+$u-ArticleListItem__link--linkColorActive: $linkColorActive;
+$u-ArticleListItem__link--linkColorVisited: $linkColorVisited;
+
+$u-ArticleListItem__summary--color: $fontColor;
+$u-ArticleListItem__summary--colorHoverFocus: $fontColor;
+$u-ArticleListItem__summary--colorActive: $fontColor;
+$u-ArticleListItem__summary--colorVisited: $fontColor;
+
+/* Not sure all these color settings are necessary
+$u-ArticleListItem__label--type--color:;
+$u-ArticleListItem__label--dateline__posted--color:;
+$u-ArticleListItem__label--dateline__postedDate--color:f; */
+
+/* LATEST Moved to Module Basic above
+$u-NewsList__itemContainer--margin: 1em 0;
+$u-NewsList__item--background: transparent;
+$u-NewsList__item--padding: 0; */
+
+$buttonBgColor: $linkColor;
+$buttonBgColorHoverFocus: $linkColorHoverFocus;
+$buttonBgColorVisited: $linkColor;
+$buttonBgColorActive: $linkColorActive;
+
+$buttonLinkColor: #fff;
+$buttonLinkColorHoverFocus: $linkColor;
+$buttonLinkColorVisited: #fff;
+$buttonLinkColorActive: $linkColorHoverFocus;
+
+$uniqueButtonBgColor: $linkColor;
+$uniqueButtonBgColorHoverFocus: $linkColorHoverFocus;
+$uniqueButtonBgColorVisited: $linkColorVisited;
+$uniqueButtonBgColorActive: $linkColorActive;
+
+$uniqueButtonLinkColor: #fff;
+$uniqueButtonLinkColorHoverFocus: $linkColor;
+$uniqueButtonLinkColorVisited: #fff;
+$uniqueButtonLinkColorActive: $linkColorHoverFocus;
+
+$u-ArticleList__systemMessage--font: normal 1.1em/1.2 $serif;
+$u-ArticleList__systemMessage--color: #400;
+
+/*	Search
+	------ */
+
+/*	Mobile search colors
+	-------------------- */
+
+$u-Search__submit--mobileIconColor: #fff;
+$u-Search__submit--mobileIconColorHoverFocus: $linkColor;
+$u-Search__submit--mobileIconColorActivated: $linkColorActive;
+
+$u-Search__submit--iconColor: #ccc;
+$u-Search__submit--iconColorHoverFocus: #666;
+$u-Search__submit--iconColorActivated: #fff;
+
+$u-Search__submit--mobileBgColor: $fontColor; /* this color needs to match the hard-coded value of the input border found in modules/search.scss */
+$u-Search__submit--bgColor: #666;
+$u-Search__submit--bgColorHoverFocus: #999; 
+$u-Search__submit--bgColorActive: #000;
+
+$u-Search__field--mobileBgColor: #fff;
+$u-Search__field--bgColor: transparent;
+$mobileSearchBackgroundColor: $fontColor;
+$searchBackgroundColor: #fff;
+
+$u-Search__field--font: normal 1em $sans-serif;
+$u-Search__field--textColor: $fontColor;
+$u-Search__field--placeholderColor: $fontColor;
+
+$u-Search--borderSize: border-bottom;
+$u-Search--borderSettings: none;
+
+$pointAtWhichSearchMovesToRight: 1040px;
+/*	Up until this point, the search box will be positioned
+	over the masthead, so as not to overlap it. This point
+	depends on how wide the site masthead is. Keep increasing it
+	until the search box no longer overlaps the masthead.
+*/
+
+/*	Mobile search and menu colors
+	----------------------------- */
+$u-Masthead__vassar--mobileLinkColor: #fff;
+$u-Masthead__vassar--mobileLinkColorHoverFocus: $linkColor;
+$u-Masthead__vassar--mobileLinkColorActive: $linkColorActive;
+
+$u-Masthead__vassar--linkColor: $linkColor;
+$u-Masthead__vassar--linkColorHoverFocus: $linkColorHoverFocus;
+$u-Masthead__vassar--linkColorActive: $linkColorActive;
+
+$ac-NavAnchor--menuColor: #fff;
+$ac-NavAnchor--menuColorHoverFocus: $linkColor;
+$ac-NavAnchor--menuColorActive: $linkColorActive;
+
+$searchAndMenuBtnBackground--activated: #000;	/* The background color of a button, when activated */
+$mobileHeaderBg: #000;					/* The background of the "Vassar College" area */
+$searchAndMenuBtnBackground: #000;		/* The background of the search and menu buttons */
+$searchAndMenuBtnColor: #000;			/* This value is found in the nav module but I don't know what it does - maybe remove it? */
+$searchBtnAndMenuBtnDividerColor: #000;	/* The color of the space between search and menu */
+
+/* Don't modify these */
+
+$ms-base: 1em;
+/* $ms-ratio: $major-third; */

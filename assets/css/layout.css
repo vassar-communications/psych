@@ -1,0 +1,208 @@
+/*	CONFIG
+	====== */
+/*	TYPOGRAPHY
+	========== */
+/*	LAYOUT
+	====== */
+/* Site breakpoints */
+/* 400px divided by 16px */
+/* 600px divided by 16px */
+/* 800px divided by 16px */
+/* 1000px divided by 16px */
+/* The padding on u-lHeader, u-lMain, u-lFooter, and u-NavSite. */
+/* COLOR
+	====== */
+/* Basic link colors - these colors also affect the Google Search result link colors */
+/* tint($linkColorVisited, 50%) or shade($linkColorVisited, 50%) can be used to lighten or darken hue */
+/* MODULES
+	======== */
+/* Bios */
+/* Breadcrumbs  */
+/* Footer */
+/* Images */
+/*	Google search results  */
+/* Currently being overridden by something in Google's default CSS */
+/* The numbers that represent pages of search results */
+/* Nav */
+/* level 3 covers Level 3 and up. */
+/* LATEST Modules basic */
+/* Use these variables to place a bg color on side news announcement items */
+/* News  */
+/* Not sure all these color settings are necessary
+$u-ArticleListItem__label--type--color:;
+$u-ArticleListItem__label--dateline__posted--color:;
+$u-ArticleListItem__label--dateline__postedDate--color:f; */
+/* LATEST Moved to Module Basic above
+$u-NewsList__itemContainer--margin: 1em 0;
+$u-NewsList__item--background: transparent;
+$u-NewsList__item--padding: 0; */
+/*	Search
+	------ */
+/*	Mobile search colors
+	-------------------- */
+/* this color needs to match the hard-coded value of the input border found in modules/search.scss */
+/*	Up until this point, the search box will be positioned
+	over the masthead, so as not to overlap it. This point
+	depends on how wide the site masthead is. Keep increasing it
+	until the search box no longer overlaps the masthead.
+*/
+/*	Mobile search and menu colors
+	----------------------------- */
+/* The background color of a button, when activated */
+/* The background of the "Vassar College" area */
+/* The background of the search and menu buttons */
+/* This value is found in the nav module but I don't know what it does - maybe remove it? */
+/* The color of the space between search and menu */
+/* Don't modify these */
+/* $ms-ratio: $major-third; */
+@media screen {
+  .u-lHeader {
+    padding: 2em 4% .2em; }
+
+  .u-lMain {
+    padding: 4% 0 3% 0; }
+
+  .u-BreadCrumbs {
+    display: block; }
+
+  .u-lFooter {
+    padding: 2em 3% 22%; } }
+@media all and (min-width: 37.5em) {
+  .u-Search {
+    width: 30%; }
+
+  .u-lHeader {
+    padding: 2.8em 4% .2em; }
+
+  .u-Masthead {
+    margin: 0 auto;
+    max-width: 75em;
+    position: relative; }
+
+  .u-lMain {
+    padding: 4.2% 3% 3% 3%; }
+
+  .u-NavSite {
+    padding: 4% 3% 3% 3%; }
+
+  .u-NavSite__level ul {
+    padding-left: 0;
+    padding-right: .5em;
+    margin: .1em 0 .6em 0; }
+
+  .u-ArticleListItem {
+    margin-bottom: 4%;
+    padding-bottom: 1em; } }
+@media all and (min-width: 50em) {
+  .u-Search {
+    width: 22.85%; }
+
+  body {
+    margin-top: 11em; } }
+@media (min-width: 62.5em) {
+  html {
+    padding: 0.7em 2% 2%; } }
+@media all and (min-width: 1040px) {
+  body {
+    margin-top: 10em; }
+
+  .u-lHeader {
+    padding-top: 7em; } }
+.modulesArea b, .modulesArea p, .modulesArea .all-link, .modulesArea .moreLink, .modulesArea .Module__listItem {
+  font: normal 0.9em "proxima-nova"; }
+.modulesArea .Module__header {
+  font: 600 1.25em/1.1 "proxima-nova"; }
+.modulesArea .Module__label--side {
+  font: 600 0.9em "proxima-nova"; }
+.modulesArea .Module__name {
+  font: bold 0.9em "proxima-nova"; }
+
+/* LAYOUT */
+@media screen {
+  .modulesArea {
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 22.784px;
+    margin-bottom: 1.424rem;
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+    padding: 1.424em 0;
+    text-align: center; }
+
+  .Module__label, dd {
+    margin: 0;
+    padding: 0;
+    display: inline-block; }
+
+  .Module__header {
+    margin-top: 0; }
+
+  .Module__label {
+    margin-right: .25em; }
+
+  .Module__list {
+    margin: 0;
+    list-style: none;
+    padding-left: 0; }
+
+  .Module__listItem {
+    padding: .3em 0;
+    margin: 0; }
+
+  .Module__listItem:last-of-type {
+    margin-bottom: 1em; }
+
+  .Module__name {
+    margin-bottom: 0; }
+
+  .moreLink {
+    display: block; } }
+@media all and (min-width: 37.5em) {
+  .modulesArea {
+    border-bottom: none;
+    text-align: left; }
+
+  .Module--halfWidth {
+    width: 50%;
+    float: left; }
+
+  .Module--halfWidth:nth-child(2n+1) {
+    padding-right: 1.424em; } }
+/* COLOR */
+.modulesArea a {
+  border-bottom: none; }
+.modulesArea .Module__headerLink {
+  color: #608491; }
+  .modulesArea .Module__headerLink:visited {
+    color: #a88; }
+  .modulesArea .Module__headerLink:focus {
+    color: #000; }
+  .modulesArea .Module__headerLink:hover {
+    color: #000; }
+  .modulesArea .Module__headerLink:active {
+    color: #000; }
+.modulesArea .Module__listItem:first-child,
+.modulesArea .Module__listItem:first-of-type {
+  border-top: none; }
+.modulesArea .Module__listItem {
+  border-top: 1px solid #eee; }
+
+.Module__desc {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center; }
+
+.Module__label,
+.Module__link,
+.moreLink,
+.Module__desc,
+.Module__title,
+.Module__desc,
+.modulesArea b,
+.modulesArea p {
+  font-size: 14.224px;
+  font-size: 0.889rem; }
+
+.u-Figure__caption--title:after {
+  content: ".";
+  position: relative; }

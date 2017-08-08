@@ -1,0 +1,116 @@
+@import "_imports";
+
+html {
+    background: #fff url(../images/background.jpg) center;
+    padding-bottom: 0;
+    }
+a {
+    border-bottom: 1px solid $linkBorderColor;
+    padding-bottom: 0;
+    @include link-colors($linkColor, $linkColorHoverFocus, $linkColorActive, $linkColorVisited, $linkColorHoverFocus);
+}
+a:hover,
+a:focus {
+	border-bottom: 1px solid $linkColorHoverFocus;
+}
+a:active {
+	border-bottom: 1px solid $linkColorActive;
+}
+a:visited {
+	border-bottom: 1px solid $linkColorVisited;
+}
+.u-NavSite__item:hover,
+.u-NavSite__item:focus,
+.u-NavSite__item:active,
+.u-NavSite__item:visited,
+.u-Masthead__siteName--link:hover,
+.u-Masthead__siteName--link:focus,
+.u-Masthead__siteName--link:active,
+.u-Masthead__siteName--link:visited,
+.u-Masthead__vassar--link:hover,
+.u-Masthead__vassar--link:focus,
+.u-Masthead__vassar--link:active,
+.u-Masthead__vassar--link:visited,
+.u-BreadCrumbs__item:hover,
+.u-BreadCrumbs__item:focus,
+.u-BreadCrumbs__item:active,
+.u-BreadCrumbs__item:visited {
+	border-bottom: none;
+}
+.u-lContent { 
+    background: #fff; 
+    border-top: 5px solid #eaeae3;
+}
+.u-lFooter { 
+    border-top: 3px double #c7dee6;
+    background: #f4f5f2 url(../images/chess.jpg) center no-repeat;
+    background-position: center bottom;
+    background-size: 100%; 
+} 
+.u-Bio__title { 
+    color: #666;
+}
+.u-Masthead__siteName--link {
+    @include link-colors(#000, $linkColorHoverFocus, $linkColorActive, #000, $linkColorHoverFocus);
+}
+
+.u-NavSite__item {
+    @include link-colors($linkColor, $linkColorHoverFocus, $linkColorActive, $linkColor, $linkColorHoverFocus);
+}
+.u-NavSite__item--isCurrent,
+.u-NavSite__item--isOpen .u-NavSite__item {
+    @include link-colors(#000, $linkColorHoverFocus, $linkColorActive, #000, $linkColorHoverFocus);
+}
+.u-NavSite__item--isOpen .u-NavSite__item.u-NavSite__item--isCurrent {
+    @include link-colors($linkColor, $linkColorHoverFocus, $linkColorActive, $linkColor, $linkColorHoverFocus);
+}
+
+@media all and (min-width: $small) {
+    .u-Masthead__vassar--link,
+    .u-Masthead__vassar--link:visited {
+            @include link-colors($linkColorVisited, $linkColorHoverFocus, $linkColorActive, $linkColorVisited, $linkColorHoverFocus);
+    }
+    html {
+        background: url(../images/background.jpg) center;
+    }
+    body {
+        margin-top: 11.3em;
+        position:inherit;
+        border-top: 5px solid #eaeae3;
+        border-bottom: none;
+        border-left: 1px solid #eaeae3;
+        border-right: 1px solid #eaeae3; 
+        background: #fff;
+     }
+    .u-lHeader { 
+        position: absolute !important; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        background: none; 
+        background: transparent url(../images/header.png) no-repeat top left; 
+        background-position: center top; 
+	}
+    .u-lContent { 
+        background: #fff; 
+        border-top: none;
+        margin-bottom: 1.25em;
+    }
+    .u-NavSite__level ul {
+        border-left: none;
+        border-right: 1px solid #eee;
+    }
+    .u-ArticleListItem { 
+        border-bottom: 1px dotted #666; 
+    }
+    .gs-webResult.gs-result a.gs-title:link, .gs-webResult.gs-result a.gs-title:link b, .gs-imageResult a.gs-title:link, .gs-imageResult a.gs-title:link b {
+    color: #608491 !important;
+    }
+}
+.Module--sidebar a,
+.u-VCard--site  a {
+     border-bottom: 1px solid;
+}
+.Module--sidebar .Module__listItem {
+    border-top: none;
+}
