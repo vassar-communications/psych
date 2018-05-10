@@ -49,7 +49,7 @@
     .u-Search {
         width: 22.85%;
     }
-	body { margin-top: 11em; }
+	body { /* margin-top: 11em; */ }
 }
 
 @media (min-width: $large) {
@@ -59,7 +59,7 @@
 }
 
 @media all and (min-width: $pointAtWhichSearchMovesToRight) {
-	body { margin-top: 10em; }
+	body { /* margin-top: 10em; */ }
 	.u-lHeader { padding-top: 7em;  }
 }
 

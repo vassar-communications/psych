@@ -156,7 +156,10 @@ $u-NewsList__item--padding: 0; */
     margin-bottom: 0; }
 
   .moreLink {
-    display: block; } }
+    display: block; }
+
+  p.all-link a {
+    display: inline-block; } }
 @media all and (min-width: 37.5em) {
   .modulesArea {
     border-bottom: none;
@@ -206,3 +209,11 @@ $u-NewsList__item--padding: 0; */
 .u-Figure__caption--title:after {
   content: ".";
   position: relative; }
+
+/* alert */
+.is-alert body {
+  margin-top: 0; }
+.is-alert .u-lHeader {
+  position: relative !important; }
+
+/* end alert */
